@@ -1,0 +1,60 @@
+<!Doctype html>
+<html>
+<head>
+    <title>Javascript</title>
+</head>
+<body>
+  <form >
+  <input id="ln" type="text">
+  <select id="slc">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+    <option value="%">%</option>
+  </select>
+  <input id="lr" type="text">
+  <input type="submit" value="Try me !" onclick="calculate()">
+</form>
+<script type="text/javascript">
+setInterval(function(){ alert("Please, use me..."); }, 30000);
+
+  function calculate() {
+
+    var left = document.getElementById("ln").value;
+    var right = document.getElementById("lr").value;
+    var ln = parseInt(left);
+    var lr = parseInt(right);
+    var slc = document.getElementById("slc").value;
+    var res;
+    var r1 = left.match('^[0-9]+$');
+    var r2 = right.match('^[0-9]+$');
+
+    if (ln < 0 || lr < 0 || isNaN(ln) || isNaN(lr) || r1 == null || r2 == null || parseInt(r1[0]) != ln || parseInt(r2[0]) != lr)
+      alert("Error :(");
+    else
+    {
+        if (slc == "+")
+          res = ln + lr;
+        else if (slc == "-")
+          res = ln - lr;
+        else if (slc == "*")
+          res = ln * lr;
+        else if (slc == "/" && lr != 0)
+          res = ln / lr;
+        else if (slc == "%" && lr != 0)
+          res = ln % lr;
+        else if (slc == "/" || slc == "%" && lr == 0)
+        {
+          console.log("It's over 9000!");
+          alert("It's over 9000!");
+          return ;
+        }
+        console.log(res);
+        alert(res);
+    }
+  }
+
+</script>
+</body>
+</html>

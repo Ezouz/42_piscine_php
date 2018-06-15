@@ -1,0 +1,150 @@
+body {
+  font-family:verdana;
+}
+h1 {
+  text-align:center;
+  color:black;
+  font-size:2.0vmin;
+}
+#table {
+  display:table;
+  border-collapse:collapse;
+  border-spacing:0;
+  margin-left:auto;
+  margin-right:auto;
+  width:90%;
+  height: 100%;
+}
+#tr {
+  display:table-row;
+  width:100%;
+  height:30%;
+}
+#td {
+  border:1px;
+  display:table-cell;
+  width:5%;
+  height:100%;
+}
+.cell1 {
+  display:block;
+  font-size:0.6vmin;
+  text-align:right;
+}
+.cell2 {
+  display:block;
+  font-size:1.8vmin;
+  text-align:center;
+}
+.cell3 {
+display:block;
+font-size:0.7vmin;
+text-align:left;
+}
+.cell4 {
+  position:absolute;
+  top:0;
+  right:0;
+  font-size:0.7vmin;
+}
+.cell5 {
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%, -50%);
+  font-size:0.7vmin;
+}
+.cell6 {
+  position:absolute;
+  bottom:0;
+  left:0;
+  font-size:0.7vmin;
+}
+#td1 {
+  display:table-cell;
+  border: 1px solid black;
+  background-color:slateblue;
+  width:5%;
+  height: 100%;
+}
+#td2 {
+  display:table-cell;
+  border: 1px solid black;
+  background-color:skyblue;
+  width:5%;
+  height: 100%;
+}
+#td3 {
+  display:table-cell;
+  border: 1px solid black;
+  background-color:darksalmon;
+  width:5%;
+  height:100%;
+}
+#td4 {
+  display:table-cell;
+  border: 1px solid black;
+  background-color:peachpuff;
+  width:5%;
+  height:100%;
+}
+#td5 {
+  display:table-cell;
+  border: 1px solid black;
+  background-color:khaki;
+  width:5%;
+  height:100%;
+}
+#td6 {
+  display:table-cell;
+  border: 1px solid black;
+  background-color:palegreen;
+  width:5%;
+  height:100%;
+}
+#td7 {
+  display:table-cell;
+  border: 1px solid black;
+  background-color:turquoise;
+  width:5%;
+  height:100%;
+}
+#td8 {
+  display:table-cell;
+  border: 1px solid black;
+  background-color:violet;
+  width:5%;
+  height:100%;
+}
+#td9 {
+  display:table-cell;
+  border: 1px solid black;
+  background-color:violet;
+  width:5%;
+  height:100%;
+}
+#td10 {
+  display:table-cell;
+  border: 1px solid black;
+  background-color:mistyrose;
+  width:5%;
+  height:100%;
+  position:relative;
+}
+#td11 {
+  display:table-cell;
+  border: 1px solid black;
+  background-color:pink;
+  width:5%;
+  height:100%;
+  position:relative;
+}
+.imend {
+  width: 35%;
+  height: 35%;
+  min-width: 5%;
+  min-height: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

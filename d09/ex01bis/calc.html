@@ -1,0 +1,62 @@
+<!Doctype html>
+<html>
+<head>
+    <title>Javascript + Jquery</title>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+  <form >
+  <input id="ln" type="text">
+  <select id="slc">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+    <option value="%">%</option>
+  </select>
+  <input id="lr" type="text">
+  <input type="submit" id="submit" value="Try me !">
+</form>
+<script type="text/javascript">
+setInterval(function(){ alert("Please, use me..."); }, 30000);
+$(document).ready(function() {
+    $('#submit').click(function calculate() {
+
+    var ln = $('#ln').val();
+    var lr = $('#lr').val();
+    var slc = $('#slc').val();
+    var res;
+
+    ln = parseInt(ln, 10);
+    lr = parseInt(lr, 10);
+    if (ln < 0 || lr < 0 || isNaN(ln) || isNaN(ln))
+        alert("Error :(");
+    else
+    {
+        if (slc == "+")
+          res = ln + lr;
+        else if (slc == "-")
+          res = ln - lr;
+        else if (slc == "*")
+          res = ln * lr;
+        else if (slc == "/" && lr != 0)
+          res = ln / lr;
+        else if (slc == "%" && lr != 0)
+          res = ln % lr;
+        else if (slc == "/" || slc == "%" && lr == 0)
+        {
+          console.log("It's over 9000!");
+          alert("It's over 9000!");
+          return ;
+        }
+        console.log(res);
+        alert(res);
+    }
+  });
+});
+</script>
+</body>
+</html>

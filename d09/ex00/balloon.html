@@ -1,0 +1,62 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Javascript</title>
+    </head>
+    <body>
+          <div id="balloon" onclick="inflate()" onmouseout="mouseOut(balloon)" style="width:200px;height:200px;background-color:red;border-radius:50%;">
+          <script>
+
+          function inflate(balloon) {
+            var w = parseInt(document.getElementById('balloon').style.width, 10);
+            var h = parseInt(document.getElementById('balloon').style.height, 10);
+
+            if (h + 10 <= 420) {
+              w += 10;
+              h += 10;
+            }
+            else {
+              w = 200;
+              h = 200;
+            }
+            var wi = w.toString();
+            var hi = h.toString();
+            document.getElementById('balloon').style.width = wi.concat('px');
+            document.getElementById('balloon').style.height = hi.concat('px');
+            color(1);
+          }
+
+          function color(order) {
+            var col = document.getElementById('balloon').style.backgroundColor;
+            if (col == "red" && order == 1)
+              col = "green";
+            else if (col == "green" && order == 1)
+              col = "blue";
+            else if (col == "blue" && order == 1)
+              col = "red";
+            else if (col == "red" && order == -1)
+              col = "blue";
+            else if (col == "green" && order == -1)
+              col = "red";
+            else if (col == "blue" && order == -1)
+              col = "green";
+            document.getElementById('balloon').style.backgroundColor = col;
+          }
+
+          function mouseOut() {
+            var w = parseInt(document.getElementById('balloon').style.width, 10);
+            var h = parseInt(document.getElementById('balloon').style.height, 10);
+            if (w > 200) {
+              w -= 5;
+              h -= 5;
+            }
+            var wi = w.toString();
+            var hi = h.toString();
+            document.getElementById('balloon').style.width = wi.concat('px');
+            document.getElementById('balloon').style.height = hi.concat('px');
+            color(-1);
+          }
+          </script>
+        </div>
+    </body>
+</html>

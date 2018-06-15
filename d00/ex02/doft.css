@@ -1,0 +1,182 @@
+body {
+  background-color: #484848;
+}
+.global {
+  margin-top: 23px;
+  width: 100%;
+  height: 100%;
+}
+.inrect {
+  border-radius: 15px;
+  background: #909090;
+  box-shadow: 12px 12px 12px black;
+}
+#hrect {
+  width: 1845px;
+  height: 180px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin:auto;
+}
+#dl {
+  width: 1850px;
+  display:flex;
+  justify-content: space-between;
+}
+.dot42 {
+  height: 145px;
+  width: auto;
+  padding: 35px;
+  justify-content: flex-start;
+  padding-left: 10px;
+}
+.loupe{
+  justify-content: right;
+  height: 190px;
+  padding-top: 35px;
+  padding-right: 1px;
+}
+#cr {
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  justify-content: space-between;
+  height: 180px;
+}
+.reload {
+  margin-top: 13px;
+  margin-right: 13px;
+  height: 25px;
+  width: auto;
+  align-self: flex-end;
+}
+.close {
+  margin-bottom: 13px;
+  margin-right: 13px;
+  height: 25px;
+  width: auto;
+  align-self: flex-end;
+}
+#rbody {
+  display: flex;
+  width: 1760px;
+  height: 1160px;
+  padding-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+#lrect {
+  width: 180px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.align {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-top: 10px;
+}
+.rcol1 {
+  margin-right: auto;
+  margin-left: auto;
+  height: 90px;
+  width: auto;
+  padding-top: 10px;
+}
+.rcol2 {
+  border: 7px solid red;
+  border-radius: 5px;
+  margin: auto;
+  height: 85px;
+  width: auto;
+  margin-top: 7px;
+}
+#brick {
+  background-image: url('resources/brick.jpg');
+  background-repeat: round;
+  height: 90px;
+  width: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+}
+#mrect {
+  display: flex;
+  width: 1325px;
+  height: 755px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.cluster{
+  margin: auto;
+}
+#rrect {
+  width: 180px;
+  height: 550px;
+}
+.rcol3 {
+  margin-left: auto;
+  margin-right: auto;
+  height: 120px;
+  width: auto;
+  padding-top: 10px;
+}
+.rcol4 {
+  margin-left: auto;
+  margin-right: auto;
+  height: 65px;
+  width: auto;
+  padding-top: 15px;
+}
+#prect {
+  position:absolute;
+  flex-direction: column;
+  margin-left: -95px;
+  margin-top: 657px;
+  padding-bottom: 150px;
+  padding-right: 75px;
+  display: flex;
+}
+.greenrect {
+  width: 595px;
+  height: 70px;
+  border-radius: 15px;
+  background:	#80ff80;
+  box-shadow: 12px 12px 12px black;
+}
+.txtbox {
+  padding-left: 15px;
+  font-family: verdana;
+  font-size: 123%;
+  margin-top: -5px;
+}
+.rep {
+  width: 600px;
+  display: flex;
+  margin-left:18px;
+  margin-top: -15px;
+}
+.inputtxt {
+  display:inline-flex;
+  height:20px;
+  width:620px;
+  border-style: inset;
+  border-color: lightgrey;
+}
+.inputbasic {
+  margin-left: 15px;
+  padding: auto;
+  display:inline-flex;
+  height:25px;
+  width:120px;
+  border:1px solid grey;
+  border-radius:2px;
+  font-family: verdana;
+  font-size:100%;
+  background-color: #DCDCDC;
+}

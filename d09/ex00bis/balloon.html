@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Javascript + Jquery</title>
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    </head>
+    <body>
+      <div id="balloon" style="width:200px;height:200px;background-color:red;border-radius:50%;">
+          <script>
+
+      $(document).ready(function() {
+        $('#balloon').click(function inflate() {
+            var w = $(this).width();
+            var h = $(this).height();
+            var col = $(this).css('background-color');
+            if (h + 10 <= 420) {
+                w += 10;
+                h += 10;
+            }
+            else {
+                w = 200;
+                h = 200;
+            }
+            if (col == "rgb(255, 0, 0)")
+               col = "rgb(0, 128, 0)";
+            else if (col == "rgb(0, 128, 0)")
+               col = "rgb(0, 0, 255)";
+            else if (col == "rgb(0, 0, 255)")
+               col = "rgb(255, 0, 0)";
+            $(this).css('background-color', col);
+            $(this).width(w);
+            $(this).height(h);
+        });
+
+        $('#balloon').mouseout(function mouseOut() {
+            var w = $(this).width();
+            var h = $(this).height();
+            var col = $(this).css('background-color');
+            if (w > 200) {
+              w -= 5;
+              h -= 5;
+            }
+            if (col == "rgb(255, 0, 0)")
+               col = "rgb(0, 0, 255)";
+            else if (col == "rgb(0, 128, 0)")
+               col = "rgb(255, 0, 0)";
+            else if (col == "rgb(0, 0, 255)")
+               col = "rgb(0, 128, 0)";
+             $(this).css('background-color', col);
+            $(this).width(w);
+            $(this).height(h);
+          });
+        });
+
+          </script>
+      </div>
+    </body>
+</html>
